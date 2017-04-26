@@ -42,6 +42,10 @@ public class Game
         parser = new Parser();
     }
 
+    public static void main(String[] args){
+        System.out.println("Still working on how to call the play method here");
+    }
+
 
     /**
      * Create all the rooms and link their exits together.
@@ -166,8 +170,10 @@ public class Game
      */
     private void printHelp()
     {
-        System.out.println("You are lost. You are alone. You wander");
-        System.out.println("around at the university.");
+        System.out.println("You curse your 'friends' for leaving");
+        System.out.println("you in this creepy old house.  You");
+        System.out.println("wonder how to get back at them as");
+        System.out.println("you wander from room to room.");
         System.out.println();
         System.out.println("Your command words are:");
         System.out.println(parser.showCommands());
