@@ -42,6 +42,10 @@ public class Game
         parser = new Parser();
     }
 
+    public static void main(String[] args){
+        new Game().play();
+    }
+
 
     /**
      * Create all the rooms and link their exits together.
@@ -51,7 +55,7 @@ public class Game
         Room outside, foyer, garage, livingroom, kitchen, bedroom1, bedroom2, hallway, bathroom;
 
         // create the rooms
-        outside = new Room("outside the house.  You're finnaly out, but as you're walking away you think you hear a voice call out from the entrance, saying 'please come visit again'.  Without bothering to look back, you high tail your ass outta there as fast as you can go.");
+        outside = new Room("outside the house.  You're finally out, but as you're walking away you think you hear a voice call out from the entrance, saying 'please come visit again'.  Without bothering to look back, you high tail your ass outta there as fast as you can go.");
         foyer = new Room("inside the foyer.  There is a flashlight to your right hanging on a wall mount used to hang coats off of.  Taking it would be a good idea as the rest of the house is too dark to see.");
         garage = new Room("inside the garage.  After a bit of searching, you find a crowbar and figure it might come in handy later.");
         livingroom = new Room("inside the living room.  After a bit of searching, nothing of use is found.");
@@ -115,7 +119,7 @@ public class Game
         System.out.println("You decide why not, and meet up at the house just after sunset for maximum effect.");
         System.out.println("Your friends decide to 'volunteer' you to be the first.  As you take your first");
         System.out.println("few steps inside, the door suddenly slams shut and locks.  Your friends and you");
-        System.out.println("both yelp in suprise and your 'friends' haul ass out of there, with one of them");
+        System.out.println("both yelp in surprise and your 'friends' haul ass out of there, with one of them");
         System.out.println("wishing you good luck.");
         System.out.println("You are now stuck inside the house and need to find a way out.");
         System.out.println("Type 'help' if you need help.");
@@ -166,8 +170,10 @@ public class Game
      */
     private void printHelp()
     {
-        System.out.println("You are lost. You are alone. You wander");
-        System.out.println("around at the university.");
+        System.out.println("You curse your 'friends' for leaving");
+        System.out.println("you in this creepy old house.  You");
+        System.out.println("wonder how to get back at them as");
+        System.out.println("you wander from room to room.");
         System.out.println();
         System.out.println("Your command words are:");
         System.out.println(parser.showCommands());
